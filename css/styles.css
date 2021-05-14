@@ -6,6 +6,7 @@
 
   --primary-bg-color: #e5e5e5;
   --secondary-bg-color: #2f303a;
+  --grey-bg-color: #f5f4fa;
 }
 body {
   background-color: var(--primary-white-color);
@@ -24,7 +25,7 @@ body {
 /* основной белый цвет #FFFFFF*/
 /* основной цвет фона #E5E5E5*/
 /* вторичный серый цвет фона #2F303A*/
-/* секция команда цвет фона #F5F4FA */
+/* секция команда цвет фона #F5F4FA*/
 
 .list {
   list-style: none;
@@ -36,12 +37,14 @@ body {
   font-size: 14px;
   line-height: 1.14;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
 .contacts {
+  font-weight: 500;
   color: var(--secondary-text-color);
   text-decoration: none;
 }
@@ -97,15 +100,18 @@ body {
 /*======FEATURES=======*/
 
 .features .subtitle {
-  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-weight: 700;
   color: var(--primary-text-color);
 }
-.subtitle-uppercase {
-  text-transform: uppercase;
-}
+
 .section .text {
   font-weight: 400;
   text-transform: none;
+  font-size: 14px;
+  line-height: 1.71;
   color: var(--secondary-text-color);
 }
 /*======FEATURES END=======*/
@@ -121,6 +127,9 @@ body {
 /*=======WORK END=======*/
 
 /*======TEAM======*/
+.section-team {
+  background-color: var(--grey-bg-color);
+}
 .team-list .subtitle {
   font-weight: 500;
   color: var(--primary-text-color);
@@ -142,6 +151,9 @@ body {
 /*=======FILTER END=======*/
 
 /*======PORTFOLIO=======*/
+.portfolio .link {
+  text-decoration: none;
+}
 .portfolio .title {
   font-weight: 700;
   font-size: 18px;
